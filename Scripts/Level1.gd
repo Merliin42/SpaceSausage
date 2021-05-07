@@ -2,8 +2,8 @@ extends Node2D
 
 onready var seagullSpawner : PathFollow2D = $SeagullSpawner/PathFollow2D
 onready var enemySpawner : PathFollow2D = $EnemySpawner/PathFollow2D
-const SEAGULL : PackedScene = preload("res://Scenes/Seagull.tscn")
-const ENEMY : PackedScene = preload("res://Scenes/Fish.tscn")
+export var SEAGULL : PackedScene = preload("res://Scenes/Seagull.tscn")
+export var ENEMY : PackedScene = preload("res://Scenes/Fish.tscn")
 signal score(points)
 
 
