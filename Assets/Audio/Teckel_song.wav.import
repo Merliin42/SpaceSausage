@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Teckel_song.wav-df796fa4f2dc03ef2cd7506b756b16d0.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Teckel_song.wav"
+dest_files=[ "res://.import/Teckel_song.wav-df796fa4f2dc03ef2cd7506b756b16d0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
