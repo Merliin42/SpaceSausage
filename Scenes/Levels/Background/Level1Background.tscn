@@ -7,7 +7,7 @@
 [ext_resource path="res://Assets/Background/Level1/cloud.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Background/Level1/sea4.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Background/Level1.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/Boat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Levels/Background/Boat.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
@@ -24,7 +24,7 @@ void fragment(){
 shader = SubResource( 2 )
 shader_param/scroll_speed = null
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 6 ) ],
 "loop": true,
@@ -37,20 +37,20 @@ z_index = -1
 script = ExtResource( 7 )
 
 [node name="sky" type="Sprite" parent="."]
+z_index = -1
 texture = ExtResource( 4 )
 
 [node name="cloud" type="Sprite" parent="."]
 material = SubResource( 3 )
 position = Vector2( 1288, 0 )
+z_index = -1
 texture = ExtResource( 5 )
 
 [node name="Boat" parent="." instance=ExtResource( 8 )]
-position = Vector2( 952, 264 )
+position = Vector2( 992, 264 )
 
 [node name="Sea" type="AnimatedSprite" parent="."]
 z_index = 1
-frames = SubResource( 1 )
+frames = SubResource( 4 )
 frame = 1
 playing = true
-
-[connection signal="gone" from="Boat" to="." method="_on_Boat_gone"]
