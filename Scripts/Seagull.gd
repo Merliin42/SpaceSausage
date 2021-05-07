@@ -19,7 +19,7 @@ func _process(delta):
 
 func _on_VisibilityNotifier2D_screen_exited():
 	if position.x < 0 :
-		emit_signal("missed", POINTS[type])
+		emit_signal("missed", -POINTS[type])
 		self.queue_free()
 
 func _on_Seagull_body_entered(body):

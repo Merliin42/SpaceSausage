@@ -3,31 +3,24 @@ extends Node2D
 export var scroll_speed : float = 0.05
 onready var seagullSpawner : PathFollow2D = $SeagullSpawner/PathFollow2D
 onready var fishSpawner : PathFollow2D = $FishSpawner/PathFollow2D
-onready var WIN : Timer = $Win
 const SEAGULL : PackedScene = preload("res://Scenes/Seagull.tscn")
 const FISH : PackedScene = preload("res://Scenes/Fish.tscn")
 const BOAT : PackedScene = preload("res://Scenes/Boat.tscn")
-var score : int = 0
-var time : int = 120
-signal win
+signal score(points)
 
 func _ready():
-	$HUD.change_score(score)
 	$Clouds.material.set_shader_param("scroll_speed", scroll_speed)
 
 
 func on_Seagull_catched(points):
-	score += points
-	$HUD.change_score(score)
+	emit_signal("score", points)
 
 
 func on_Seagull_missed(points):
-	score -= points * 2
-	$HUD.change_score(score)
+	emit_signal("score", points)
 
-func on_Fish_hit():
-	score -= 100
-	$HUD.change_score(score)
+func on_Fish_hit(points):
+	emit_signal("score", points)
 
 
 func _on_SeagullRythm_timeout():
@@ -37,13 +30,6 @@ func _on_SeagullRythm_timeout():
 	new_child.connect("catched", self, "on_Seagull_catched")
 	new_child.connect("missed", self, "on_Seagull_missed")
 	self.add_child(new_child)
-
-
-func _on_Win_timeout():
-	if time == 0 :
-		emit_signal("win")
-	time -= 1
-	$HUD.change_time(time)
 
 
 func _on_FishRythm_timeout():

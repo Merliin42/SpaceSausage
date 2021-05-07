@@ -1,6 +1,6 @@
 extends Sprite
 
-var SPEED : int = 100
+var SPEED : int = 50
 signal gone
 
 func _process(delta):
