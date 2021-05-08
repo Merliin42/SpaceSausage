@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/star1.png-7ef561a92059bc84b868eb07b7075dcf.stex"
+path="res://.import/star1.png-5cc39baf96bb665950e1fdad4d39f6ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Level2/star1.png"
-dest_files=[ "res://.import/star1.png-7ef561a92059bc84b868eb07b7075dcf.stex" ]
+source_file="res://Assets/Background/Level3/star1.png"
+dest_files=[ "res://.import/star1.png-5cc39baf96bb665950e1fdad4d39f6ad.stex" ]
 
 [params]
 

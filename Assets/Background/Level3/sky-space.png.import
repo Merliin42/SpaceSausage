@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sky-space.png-ae434b70d50ac88e8c80d7629887f36c.stex"
+path="res://.import/sky-space.png-675dd8f2bf466d9ffec592e8994b40c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/Level2/sky-space.png"
-dest_files=[ "res://.import/sky-space.png-ae434b70d50ac88e8c80d7629887f36c.stex" ]
+source_file="res://Assets/Background/Level3/sky-space.png"
+dest_files=[ "res://.import/sky-space.png-675dd8f2bf466d9ffec592e8994b40c4.stex" ]
 
 [params]
 

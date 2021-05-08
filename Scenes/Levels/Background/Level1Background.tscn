@@ -9,7 +9,7 @@
 [ext_resource path="res://Scripts/Background/Level1.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/Levels/Background/Boat.tscn" type="PackedScene" id=8]
 
-[sub_resource type="Shader" id=2]
+[sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
 uniform float scroll_speed;
 void fragment(){
@@ -20,11 +20,11 @@ void fragment(){
 }
 "
 
-[sub_resource type="ShaderMaterial" id=3]
-shader = SubResource( 2 )
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
 shader_param/scroll_speed = null
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 6 ) ],
 "loop": true,
@@ -41,7 +41,7 @@ z_index = -1
 texture = ExtResource( 4 )
 
 [node name="cloud" type="Sprite" parent="."]
-material = SubResource( 3 )
+material = SubResource( 2 )
 position = Vector2( 1288, 0 )
 z_index = -1
 texture = ExtResource( 5 )
@@ -51,6 +51,5 @@ position = Vector2( 992, 264 )
 
 [node name="Sea" type="AnimatedSprite" parent="."]
 z_index = 1
-frames = SubResource( 4 )
-frame = 1
+frames = SubResource( 3 )
 playing = true
