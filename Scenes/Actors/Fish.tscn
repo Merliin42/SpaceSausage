@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/FlyingFish/flying fish3.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Actors/Fish.gd" type="Script" id=2]
+[ext_resource path="res://Assets/FlyingFish/flying fish2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/FlyingFish/flying fish4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/FlyingFish/flying fish1.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 24.0
+height = 64.0
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 24.0
+height = 64.0
+
+[node name="Fish" type="RigidBody2D"]
+position = Vector2( 304, 1048 )
+rotation = -1.5708
+collision_layer = 0
+collision_mask = 0
+linear_velocity = Vector2( 100, -500 )
+angular_velocity = 0.35
+angular_damp = 0.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, -7.99994 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[node name="DogCatcher" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="DogCatcher"]
+position = Vector2( 16, -7.99994 )
+rotation = 1.5708
+shape = SubResource( 3 )
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="area_entered" from="DogCatcher" to="." method="_on_DogCatcher_area_entered"]
