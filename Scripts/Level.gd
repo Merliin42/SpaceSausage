@@ -31,7 +31,7 @@ func _on_SeagullRythm_timeout():
 
 func _on_EnemyRythm_timeout():
 	enemySpawner.offset = rand_range(0, EnemyOffset)
-	var new_child : RigidBody2D = ENEMY.instance()
+	var new_child = ENEMY.instance()
 	new_child.position = enemySpawner.position
 	new_child.connect("hit", self, "on_Enemy_hit")
 	if level == 3 :

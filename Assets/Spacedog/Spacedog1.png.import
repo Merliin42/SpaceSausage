@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seagull10.png-44e70118022a4a603bfaf263b9b6cc63.stex"
+path="res://.import/Spacedog1.png-c6dc6d511b3112f06f1d05b3e8928786.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Seagull/seagull10.png"
-dest_files=[ "res://.import/seagull10.png-44e70118022a4a603bfaf263b9b6cc63.stex" ]
+source_file="res://Assets/Spacedog/Spacedog1.png"
+dest_files=[ "res://.import/Spacedog1.png-c6dc6d511b3112f06f1d05b3e8928786.stex" ]
 
 [params]
 

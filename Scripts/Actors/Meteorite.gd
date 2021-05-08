@@ -1,6 +1,6 @@
 extends Area2D
 
-var type : int = 0 # 0 = straight, 1 = sinusoidal
+var type : int = 1 # 0 = straight, 1 = sinusoidal
 export var SPEED : int = 200
 
 func _process(delta):

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fish.png-61bab009c67a22756da545939740522c.stex"
+path="res://.import/spaceseagull6.png-c67392598d03ec2cadf497aed89d72ff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Fish/fish.png"
-dest_files=[ "res://.import/fish.png-61bab009c67a22756da545939740522c.stex" ]
+source_file="res://Assets/SpaceSeagull/spaceseagull6.png"
+dest_files=[ "res://.import/spaceseagull6.png-c67392598d03ec2cadf497aed89d72ff.stex" ]
 
 [params]
 
