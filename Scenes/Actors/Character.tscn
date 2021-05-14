@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/Dogs/Dog/Dog2.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Actors/Character.gd" type="Script" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Assets/Dogs/Spacedog/Spacedog1.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Dogs/Spacedog/Spacedog2.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Dogs/Spacedog/spacedog3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Dogs/croc/croc2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Dogs/croc/croc1.png" type="Texture" id=12]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 56.0
@@ -27,6 +29,11 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "SpaceDog",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Croc",
 "speed": 5.0
 } ]
 
@@ -52,7 +59,7 @@ shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -67,3 +74,4 @@ stream = ExtResource( 6 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="FishCatcher" to="." method="_on_FishCatcher_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

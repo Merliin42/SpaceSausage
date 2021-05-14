@@ -4,6 +4,8 @@ const SPEED : int = 500
 var SCREEN_SIZE
 onready var soundPool : Array = [$Waf1, $Waf2]
 signal hit(points)
+var croc : bool = false
+var spaceDog : bool = false
 
 func _ready():
 	SCREEN_SIZE = get_viewport_rect().size
@@ -24,10 +26,19 @@ func _process(delta):
 func _on_Area2D_area_entered(area):
 	randomize()
 #	soundPool[rand_range(0, 2)].play()
+	if !spaceDog :
+		$AnimatedSprite.play("Croc")
+	croc = true
 
 
 func _on_FishCatcher_area_entered(area):
 	emit_signal("hit", -100)
 
 func spaceDog():
+	spaceDog = true
 	$AnimatedSprite.play("SpaceDog")
+
+
+func _on_AnimatedSprite_animation_finished():
+	if croc and !spaceDog :
+		$AnimatedSprite.play("default")
