@@ -23,7 +23,7 @@ func _process(delta):
 
 func _on_Area2D_area_entered(area):
 	randomize()
-	soundPool[rand_range(0, 2)].play()
+#	soundPool[rand_range(0, 2)].play()
 
 
 func _on_FishCatcher_area_entered(area):

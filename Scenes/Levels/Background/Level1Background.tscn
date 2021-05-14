@@ -52,4 +52,5 @@ position = Vector2( 992, 264 )
 [node name="Sea" type="AnimatedSprite" parent="."]
 z_index = 1
 frames = SubResource( 3 )
+frame = 2
 playing = true

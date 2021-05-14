@@ -1,14 +1,14 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scenes/Actors/Seagull.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull3.png" type="Texture" id=3]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull8.png" type="Texture" id=4]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull6.png" type="Texture" id=5]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull7.png" type="Texture" id=6]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull5.png" type="Texture" id=7]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull2.png" type="Texture" id=8]
-[ext_resource path="res://Assets/SpaceSeagull/spaceseagull4.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull1.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull8.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull6.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull7.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull5.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull2.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Seagulls/SpaceSeagull/spaceseagull4.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
