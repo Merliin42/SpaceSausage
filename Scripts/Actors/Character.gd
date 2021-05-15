@@ -35,7 +35,7 @@ func _on_Area2D_area_entered(_area):
 
 func _on_FishCatcher_area_entered(_area):
 	emit_signal("hit", -100)
-
+	soundPool[rand_range(0, 2)].play()
 func spaceDog():
 	spacedogEnabled = true
 	$AnimatedSprite.play("SpaceDog")
