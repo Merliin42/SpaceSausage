@@ -28,6 +28,8 @@ func _on_Area2D_area_entered(_area):
 #	soundPool[rand_range(0, 2)].play()
 	if !spacedogEnabled :
 		$AnimatedSprite.play("Croc")
+	elif spacedogEnabled :
+		$AnimatedSprite.play("SpaceCroc")
 	croc = true
 
 
@@ -41,4 +43,8 @@ func spaceDog():
 
 func _on_AnimatedSprite_animation_finished():
 	if croc and !spacedogEnabled :
+		croc = false
 		$AnimatedSprite.play("default")
+	elif croc and spacedogEnabled :
+		croc = false
+		$AnimatedSprite.play("SpaceDog")
