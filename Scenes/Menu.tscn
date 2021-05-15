@@ -1,0 +1,106 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/Menu/Menu.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/Mostra Nuova.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Menu/Play/selectplay2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Menu/Play/play.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Menu/Play/selectplay3.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Menu/Play/selectplay1.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Menu/Quit/selectquit3.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Menu/Quit/selectquit1.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Menu/Quit/selectquit2.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Menu/Quit/quit.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 2 )
+
+[sub_resource type="AnimatedTexture" id=2]
+flags = 4
+frames = 3
+fps = 8.0
+frame_0/texture = ExtResource( 7 )
+frame_1/texture = ExtResource( 4 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 6 )
+frame_2/delay_sec = 0.0
+
+[sub_resource type="AnimatedTexture" id=3]
+flags = 4
+frames = 3
+fps = 8.0
+frame_0/texture = ExtResource( 9 )
+frame_1/texture = ExtResource( 10 )
+frame_1/delay_sec = 0.0
+frame_2/texture = ExtResource( 8 )
+frame_2/delay_sec = 0.0
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 20
+custom_constants/margin_top = 100
+custom_constants/margin_left = 150
+custom_constants/margin_bottom = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_left = 150.0
+margin_top = 100.0
+margin_right = 1900.0
+margin_bottom = 980.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+margin_right = 945.0
+margin_bottom = 880.0
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 143.0
+margin_right = 945.0
+margin_bottom = 294.0
+size_flags_vertical = 6
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "SPACE SAUSAGE"
+align = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+margin_top = 442.0
+margin_right = 945.0
+margin_bottom = 880.0
+size_flags_vertical = 3
+
+[node name="Play" type="TextureButton" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_right = 229.0
+margin_bottom = 438.0
+texture_normal = ExtResource( 5 )
+texture_hover = SubResource( 2 )
+
+[node name="Quit" type="TextureButton" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+margin_left = 233.0
+margin_right = 500.0
+margin_bottom = 438.0
+texture_normal = ExtResource( 11 )
+texture_hover = SubResource( 3 )
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Play" to="." method="_on_Play_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Quit" to="." method="_on_Quit_pressed"]

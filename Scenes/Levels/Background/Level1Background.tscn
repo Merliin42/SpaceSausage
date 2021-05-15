@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Background/Level1/sea2.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Background/Level1/sea1.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://Assets/Background/Level1/sea4.png" type="Texture" id=6]
 [ext_resource path="res://Scripts/Background/Level1.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/Levels/Background/Boat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Background/Level1/boat2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Background/Level1/boat3.png" type="Texture" id=10]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -45,11 +47,28 @@ material = SubResource( 2 )
 position = Vector2( 1288, 0 )
 z_index = -1
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Boat" parent="." instance=ExtResource( 8 )]
 position = Vector2( 992, 264 )
 
+[node name="Boat2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 248, 272 )
+texture = ExtResource( 9 )
+SPEED = 25
+
+[node name="Boat3" parent="." instance=ExtResource( 8 )]
+position = Vector2( -256, 264 )
+texture = ExtResource( 10 )
+SPEED = 75
+
 [node name="Sea" type="AnimatedSprite" parent="."]
 z_index = 1
 frames = SubResource( 3 )
+frame = 3
 playing = true
+__meta__ = {
+"_edit_lock_": true
+}

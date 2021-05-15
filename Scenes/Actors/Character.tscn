@@ -1,23 +1,28 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=20 format=2]
 
-[ext_resource path="res://Assets/Dog/Dog2.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Dogs/Dog/Dog2.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Actors/Character.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Dog/Dog4.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Dog/Dog1.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Dog/Dog3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Dogs/Dog/Dog4.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Dogs/Dog/Dog1.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Dogs/Dog/Dog3.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Audio/Sounds/waf2.wav" type="AudioStream" id=6]
 [ext_resource path="res://Assets/Audio/Sounds/waf1.wav" type="AudioStream" id=7]
-[ext_resource path="res://Assets/Spacedog/Spacedog1.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Spacedog/Spacedog2.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Spacedog/spacedog3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Dogs/Spacedog/Spacedog1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Dogs/Spacedog/Spacedog2.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Dogs/Spacedog/spacedog3.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Dogs/croc/croc2.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Dogs/croc/croc1.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc2.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc1.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc3.png" type="Texture" id=15]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 56.0
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=2]
 radius = 56.0
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 3 ) ],
 "loop": true,
@@ -27,6 +32,16 @@ animations = [ {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "SpaceDog",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "Croc",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 13 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "SpaceCroc",
 "speed": 5.0
 } ]
 
@@ -48,11 +63,11 @@ collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishCatcher"]
 position = Vector2( 248, -120 )
-shape = SubResource( 5 )
+shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-frames = SubResource( 6 )
-frame = 1
+frames = SubResource( 3 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -67,3 +82,4 @@ stream = ExtResource( 6 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="FishCatcher" to="." method="_on_FishCatcher_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

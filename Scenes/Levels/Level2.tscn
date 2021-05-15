@@ -6,7 +6,7 @@
 
 [sub_resource type="Curve2D" id=1]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 1980, 0, 0, 0, 0, 0, 1980, 1080 )
+"points": PoolVector2Array( 0, 0, 0, 0, 2100, 0, 0, 0, 0, 0, 2100, 1080 )
 }
 
 [node name="Level2" instance=ExtResource( 1 )]
@@ -20,5 +20,8 @@ position = Vector2( 960, 540 )
 curve = SubResource( 1 )
 
 [node name="PathFollow2D" parent="EnemySpawner" index="0"]
-position = Vector2( 1980, 0 )
-rotation = 1.5708
+position = Vector2( 2100, 0 )
+rotation = 1.57086
+
+[node name="EnemyRythm" parent="." index="3"]
+wait_time = 5.0
