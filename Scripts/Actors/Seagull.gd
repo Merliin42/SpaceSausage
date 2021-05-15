@@ -2,6 +2,7 @@ extends Area2D
 
 signal catched(points)
 signal missed(points)
+var vanished : bool = false
 
 
 const SPEED : Array = [100, 300]
@@ -14,6 +15,8 @@ func _ready():
 	self.scale = Vector2(SIZE[type], SIZE[type])
 
 func _process(delta):
+	if vanished :
+		return
 	self.position.x -= SPEED[type]*delta
 
 
@@ -24,4 +27,10 @@ func _on_VisibilityNotifier2D_screen_exited():
 
 func _on_Seagull_body_entered(_body):
 	emit_signal("catched", POINTS[type])
-	self.queue_free()
+#	$AnimatedSprite.
+	$AnimatedSprite.play("explosion")
+	vanished = true
+
+func _on_AnimatedSprite_animation_finished():
+	if vanished :
+		queue_free()
