@@ -33,7 +33,7 @@ func _on_EnemyRythm_timeout():
 	enemySpawner.offset = rand_range(0, EnemyOffset)
 	var new_child = ENEMY.instance()
 	new_child.position = enemySpawner.position
-	new_child.connect("hit", self, "on_Enemy_hit")
+#	new_child.connect("hit", self, "on_Enemy_hit")
 	if level == 3 :
 		new_child.type = 1
 	self.add_child(new_child)
