@@ -22,3 +22,7 @@ func _on_AnimatedSprite_animation_finished():
 
 func _on_Dog_animation_finished():
 	get_tree().change_scene("res://Scenes/Main.tscn")
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scenes/Main.tscn")
