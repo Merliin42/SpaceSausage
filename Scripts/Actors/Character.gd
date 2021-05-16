@@ -25,6 +25,7 @@ func _process(_delta):
 
 func _on_Area2D_area_entered(_area):
 	randomize()
+	$Croc.play()
 #	soundPool[rand_range(0, 2)].play()
 	if !spacedogEnabled :
 		$AnimatedSprite.play("Croc")

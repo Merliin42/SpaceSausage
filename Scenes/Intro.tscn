@@ -133,7 +133,7 @@ animations = [ {
 "speed": 8.0
 } ]
 
-[sub_resource type="Shader" id=3]
+[sub_resource type="Shader" id=2]
 code = "shader_type canvas_item;
 uniform float scroll_speed;
 void fragment(){
@@ -144,11 +144,11 @@ void fragment(){
 }
 "
 
-[sub_resource type="ShaderMaterial" id=4]
-shader = SubResource( 3 )
+[sub_resource type="ShaderMaterial" id=3]
+shader = SubResource( 2 )
 shader_param/scroll_speed = null
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 75 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 70 ), ExtResource( 88 ), ExtResource( 72 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 69 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 71 ), ExtResource( 74 ), ExtResource( 73 ), ExtResource( 77 ), ExtResource( 86 ) ],
 "loop": true,
@@ -184,13 +184,13 @@ position = Vector2( 960, 540 )
 texture = ExtResource( 66 )
 
 [node name="Cloud" type="Sprite" parent="Scene3"]
-material = SubResource( 4 )
+material = SubResource( 3 )
 position = Vector2( 680, 250 )
 texture = ExtResource( 87 )
 offset = Vector2( 380, -440 )
 
 [node name="Sea" type="AnimatedSprite" parent="Scene3"]
-frames = SubResource( 2 )
+frames = SubResource( 4 )
 frame = 12
 
 [node name="Dog" type="AnimatedSprite" parent="Scene3"]
