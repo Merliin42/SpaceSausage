@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SF-croq.mp3-499ebd1b783e2b55f8194e71883e637c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Sounds/SF-croq.mp3"
+dest_files=[ "res://.import/SF-croq.mp3-499ebd1b783e2b55f8194e71883e637c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
