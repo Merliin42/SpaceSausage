@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Assets/Dogs/Dog/Dog2.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Actors/Character.gd" type="Script" id=2]
@@ -15,12 +15,15 @@
 [ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc2.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc1.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Dogs/SpaceCroc/spacecroc3.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Audio/Sounds/spaceWaf.wav" type="AudioStream" id=16]
+[ext_resource path="res://Assets/Audio/Sounds/SF-croq.mp3" type="AudioStream" id=17]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 56.0
+radius = 112.0
 
-[sub_resource type="CircleShape2D" id=2]
-radius = 56.0
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 42.0
+height = 499.013
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -46,7 +49,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CircleShape2D" id=4]
-radius = 56.5685
+radius = 112.0
 
 [node name="Character" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -62,8 +65,8 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FishCatcher"]
-position = Vector2( 248, -120 )
-shape = SubResource( 2 )
+rotation = 1.0472
+shape = SubResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 3 )
@@ -79,6 +82,12 @@ stream = ExtResource( 7 )
 
 [node name="Waf2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
+
+[node name="SpaceWaf" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+
+[node name="Croc" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 17 )
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="FishCatcher" to="." method="_on_FishCatcher_area_entered"]

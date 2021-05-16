@@ -25,6 +25,7 @@ func _process(_delta):
 
 func _on_Area2D_area_entered(_area):
 	randomize()
+	$Croc.play()
 #	soundPool[rand_range(0, 2)].play()
 	if !spacedogEnabled :
 		$AnimatedSprite.play("Croc")
@@ -36,8 +37,10 @@ func _on_Area2D_area_entered(_area):
 func _on_FishCatcher_area_entered(_area):
 	emit_signal("hit", -100)
 	soundPool[rand_range(0, 2)].play()
+	
 func spaceDog():
 	spacedogEnabled = true
+	soundPool = [$SpaceWaf, $SpaceWaf]
 	$AnimatedSprite.play("SpaceDog")
 
 
