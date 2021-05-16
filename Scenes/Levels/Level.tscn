@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Level.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Audio/Music/Ocean Teckel v2.wav" type="AudioStream" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 90, 1120, 0, 0, 0, 0, 1900, 1120 )
+}
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1984, 0, 0, 0, 0, 0, 1984, 1080 )
+}
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="EnemySpawner" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="EnemySpawner"]
+position = Vector2( 90, 1120 )
+
+[node name="SeagullSpawner" type="Path2D" parent="."]
+curve = SubResource( 2 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="SeagullSpawner"]
+position = Vector2( 1984, 0 )
+rotation = 1.5708
+
+[node name="EnemyRythm" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="SeagullRythm" type="Timer" parent="."]
+autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
+
+[connection signal="timeout" from="EnemyRythm" to="." method="_on_EnemyRythm_timeout"]
+[connection signal="timeout" from="SeagullRythm" to="." method="_on_SeagullRythm_timeout"]

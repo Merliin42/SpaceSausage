@@ -1,0 +1,225 @@
+[gd_scene load_steps=131 format=2]
+
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep18.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep9.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep13.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep30.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep35.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep37.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep21.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep31.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep24.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep10.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep36.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep32.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep26.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep27.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep23.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep3.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep8.png" type="Texture" id=17]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep28.png" type="Texture" id=18]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep1.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep6.png" type="Texture" id=20]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep11.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep12.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep17.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep15.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep16.png" type="Texture" id=25]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep34.png" type="Texture" id=26]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep20.png" type="Texture" id=27]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep25.png" type="Texture" id=28]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep19.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep29.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep7.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep22.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep5.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep2.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep33.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep4.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Intro/1_le_chien_s_endort/becometosleep14.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep19.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep22.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep7.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep10.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep2.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep4.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep13.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep9.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep3.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep6.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep12.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep8.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep15.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep18.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep20.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep21.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep11.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep1.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep5.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep14.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep16.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep17.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep27.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep25.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep23.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep26.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Intro/2_le_chien_est_endormi/sleep24.png" type="Texture" id=64]
+[ext_resource path="res://Scripts/Intro.gd" type="Script" id=65]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sky/sky.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea6.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea5.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea14.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea9.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea17.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea11.png" type="Texture" id=72]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea19.png" type="Texture" id=73]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea18.png" type="Texture" id=74]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea1.png" type="Texture" id=75]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea16.png" type="Texture" id=76]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea20.png" type="Texture" id=77]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea12.png" type="Texture" id=78]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea7.png" type="Texture" id=79]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea15.png" type="Texture" id=80]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea8.png" type="Texture" id=81]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea2.png" type="Texture" id=82]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea4.png" type="Texture" id=83]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea13.png" type="Texture" id=84]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea3.png" type="Texture" id=85]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea21.png" type="Texture" id=86]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/cloud/cloud.png" type="Texture" id=87]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/sea/sea10.png" type="Texture" id=88]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run16.png" type="Texture" id=89]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run17.png" type="Texture" id=90]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run18.png" type="Texture" id=91]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run21.png" type="Texture" id=92]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run30.png" type="Texture" id=93]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run31.png" type="Texture" id=94]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run23.png" type="Texture" id=95]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run6.png" type="Texture" id=96]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run13.png" type="Texture" id=97]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run19.png" type="Texture" id=98]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run14.png" type="Texture" id=99]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run20.png" type="Texture" id=100]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run22.png" type="Texture" id=101]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run24.png" type="Texture" id=102]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run25.png" type="Texture" id=103]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run26.png" type="Texture" id=104]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run2.png" type="Texture" id=105]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run27.png" type="Texture" id=106]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run28.png" type="Texture" id=107]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run15.png" type="Texture" id=108]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run29.png" type="Texture" id=109]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run3.png" type="Texture" id=110]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run5.png" type="Texture" id=111]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run7.png" type="Texture" id=112]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run4.png" type="Texture" id=113]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run1.png" type="Texture" id=114]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run8.png" type="Texture" id=115]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run9.png" type="Texture" id=116]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run10.png" type="Texture" id=117]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run11.png" type="Texture" id=118]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run12.png" type="Texture" id=119]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run35.png" type="Texture" id=120]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run33.png" type="Texture" id=121]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run34.png" type="Texture" id=122]
+[ext_resource path="res://Assets/Intro/3_Le_chien_court_sur_le_plage/dog/run32.png" type="Texture" id=123]
+[ext_resource path="res://Assets/Fonts/Mostra Nuova.otf" type="DynamicFontData" id=124]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 34 ), ExtResource( 16 ), ExtResource( 36 ), ExtResource( 33 ), ExtResource( 20 ), ExtResource( 31 ), ExtResource( 17 ), ExtResource( 2 ), ExtResource( 10 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 3 ), ExtResource( 37 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 1 ), ExtResource( 29 ), ExtResource( 27 ), ExtResource( 7 ), ExtResource( 32 ), ExtResource( 15 ), ExtResource( 9 ), ExtResource( 28 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 30 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 35 ), ExtResource( 26 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 6 ), ExtResource( 55 ), ExtResource( 42 ), ExtResource( 46 ), ExtResource( 43 ), ExtResource( 56 ), ExtResource( 47 ), ExtResource( 40 ), ExtResource( 49 ), ExtResource( 45 ), ExtResource( 41 ), ExtResource( 54 ), ExtResource( 48 ), ExtResource( 44 ), ExtResource( 57 ), ExtResource( 50 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 51 ), ExtResource( 38 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 39 ), ExtResource( 62 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 63 ), ExtResource( 60 ) ],
+"loop": false,
+"name": "first",
+"speed": 8.0
+} ]
+
+[sub_resource type="Shader" id=3]
+code = "shader_type canvas_item;
+uniform float scroll_speed;
+void fragment(){
+	vec2 newuv = UV;
+	newuv.x += TIME*scroll_speed;
+	vec4 c = texture(TEXTURE, newuv);
+	COLOR = c;
+}
+"
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = SubResource( 3 )
+shader_param/scroll_speed = null
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 75 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 83 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 79 ), ExtResource( 81 ), ExtResource( 70 ), ExtResource( 88 ), ExtResource( 72 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 69 ), ExtResource( 80 ), ExtResource( 76 ), ExtResource( 71 ), ExtResource( 74 ), ExtResource( 73 ), ExtResource( 77 ), ExtResource( 86 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 114 ), ExtResource( 105 ), ExtResource( 110 ), ExtResource( 113 ), ExtResource( 111 ), ExtResource( 96 ), ExtResource( 112 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 97 ), ExtResource( 99 ), ExtResource( 108 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 98 ), ExtResource( 100 ), ExtResource( 92 ), ExtResource( 101 ), ExtResource( 95 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 109 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 123 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 120 ) ],
+"loop": false,
+"name": "default",
+"speed": 8.0
+} ]
+
+[sub_resource type="DynamicFont" id=6]
+size = 100
+font_data = ExtResource( 124 )
+
+[node name="Intro" type="Node2D"]
+script = ExtResource( 65 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 960, 540 )
+frames = SubResource( 1 )
+animation = "first"
+
+[node name="Scene3" type="Node2D" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+
+[node name="Sky" type="Sprite" parent="Scene3"]
+texture = ExtResource( 66 )
+
+[node name="Cloud" type="Sprite" parent="Scene3"]
+material = SubResource( 4 )
+position = Vector2( 680, 250 )
+texture = ExtResource( 87 )
+offset = Vector2( 380, -440 )
+
+[node name="Sea" type="AnimatedSprite" parent="Scene3"]
+frames = SubResource( 2 )
+frame = 12
+
+[node name="Dog" type="AnimatedSprite" parent="Scene3"]
+frames = SubResource( 5 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 40
+custom_constants/margin_top = 40
+custom_constants/margin_left = 40
+custom_constants/margin_bottom = 40
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="CanvasLayer/MarginContainer"]
+margin_left = 1714.0
+margin_top = 933.0
+margin_right = 1880.0
+margin_bottom = 1040.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+custom_fonts/font = SubResource( 6 )
+text = "SKIP"
+flat = true
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="animation_finished" from="Scene3/Dog" to="." method="_on_Dog_animation_finished"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/Button" to="." method="_on_Button_pressed"]
